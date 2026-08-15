@@ -1,8 +1,17 @@
-cart = {}
-print ("Add Cart")
+class ShoppingCart: 
 
-item = (input("Add a Item: "))
+    def add_item(self, name, price, quantity=1):
+        if name is self.items:
+            self.items[name]["quantity"] =+ quantity
+        
+        else:
+            self.items[name]={"price": price, "quantity": quantity}
+            print(f"Added {quantity}x '{name}' to the cart")
 
-price = price = float(input("Add Price: ₱"))
-cart [item]=price
-print(f" Added a item {item} just for ₱{price:.2f}")
+name = input ("Enter an Item: ")
+price = float(input("Enter the Price: ₱" ))
+quantity = int(input("Enter Quantity: "))
+if price < 0 or quantity <= 0:
+    print [add_item]
+else:
+    print("Invalid Quantity or Price")
