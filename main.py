@@ -1,18 +1,3 @@
-    def show_cart(self):
-        
-        print("\n--- Current Shopping Cart ---")
-        if not self.items:
-            print("Your cart is empty.")
-            print("-----------------------------")
-            return
-
-        for name, details in self.items.items():
-            item_total = details["price"] * details["quantity"]
-            print(f"- {name}: {details['quantity']}x @ ${details['price']:.2f} = ${item_total:.2f}")
-        
-        print(f"🛒 Total Cart Value: ${self.calculate_total():.2f}")
-        print("-----------------------------")
-
 if __name__ == "__main__":
     cart = ShoppingCart()
     
