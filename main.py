@@ -1,3 +1,19 @@
+class ShoppingCart:
+
+def remove_item (self, name, new_price=None, new_quantity=):
+    if name not in self.items:
+        print(f"x'{name}'is not in your cart.")
+        retun
+
+    if new price is not None [][]
+       self.items[name][price] 
+
+    if quantity >=self.items[name][quantity]:
+        del self.items[name]
+    print (f"Remove all'{name}'"
+
+remove_item()
+
 if __name__ == "__main__":
     cart = ShoppingCart()
     
