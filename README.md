@@ -53,7 +53,7 @@ Exit the program when finished.
 
 ## 🎯 GROUP MEMBERS:
 
-**INFANTE, JAYNARD**
-**NAVARRO, JOSELL**
-**NISPEROS, JOY**
-**NUNAG, RUSSELL**
+**INFANTE, JAYNARD**<br>
+**NAVARRO, JOSELL**<br>
+**NISPEROS, JOY**<br>
+**NUNAG, RUSSELL**<br>
