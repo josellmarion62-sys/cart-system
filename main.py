@@ -8,7 +8,7 @@ class ShoppingCart:
             self.items[name]["quantity"] += quantity
         else:
             self.items[name]={"price": price, "quantity": quantity}
-        print(f"✔️Added {quantity}x '{name}' to the cart")
+        print(f"✔️ Added {quantity}x '{name}' to the cart")
 
     def remove_item(self, name, quantity=1):
         if name not in self.items:
