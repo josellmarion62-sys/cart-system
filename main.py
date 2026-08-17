@@ -11,24 +11,23 @@ class ShoppingCart:
 name = input ("Enter an Item: ")
 price = float(input("Enter the Price: ₱" ))
 quantity = int(input("Enter Quantity: "))
+
 if price < 0 or quantity <= 0:
     print [add_item]
 else:
     print("Invalid Quantity or Price")
 
-def remove_item (self, name, new_price=None, new_quantity=):
-    if name not in self.items:
-        print(f"x'{name}'is not in your cart.")
-        retun
+def remove_item(self, name, quantity=1):
+        if name not in self.items:
+            print(f"❌ '{name}' is not in your cart.")
+            return
 
-    if new price is not None [][]
-       self.items[name][price] 
-
-    if quantity >=self.items[name][quantity]:
-        del self.items[name]
-    print (f"Remove all'{name}'"
-
-remove_item()
+        if quantity >= self.items[name]["quantity"]:
+            del self.items[name]
+            print(f"🗑 Removed all '{name}' from the cart.")
+        else:
+            self.items[name]["quantity"] -= quantity
+            print(f"➖ Removed {quantity}x '{name}' from the cart.")
 
 if __name__ == "__main__":
     cart = ShoppingCart()
