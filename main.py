@@ -1,23 +1,16 @@
 class ShoppingCart: 
+    def __init__(self):
+        self.items = {}
 
     def add_item(self, name, price, quantity=1):
-        if name is self.items:
-            self.items[name]["quantity"] =+ quantity
-        
+
+        if name in self.items:
+            self.items[name]["quantity"] += quantity
         else:
             self.items[name]={"price": price, "quantity": quantity}
-            print(f"Added {quantity}x '{name}' to the cart")
+        print(f"✔️Added {quantity}x '{name}' to the cart")
 
-name = input ("Enter an Item: ")
-price = float(input("Enter the Price: ₱" ))
-quantity = int(input("Enter Quantity: "))
-
-if price < 0 or quantity <= 0:
-    print [add_item]
-else:
-    print("Invalid Quantity or Price")
-
-def remove_item(self, name, quantity=1):
+    def remove_item(self, name, quantity=1):
         if name not in self.items:
             print(f"❌ '{name}' is not in your cart.")
             return
@@ -28,6 +21,26 @@ def remove_item(self, name, quantity=1):
         else:
             self.items[name]["quantity"] -= quantity
             print(f"➖ Removed {quantity}x '{name}' from the cart.")
+
+    def calculate_total(self):
+        total = sum(details["price"] * details["quantity"]
+         for details in self.items.values())
+        return total
+
+    def show_cart(self):
+        
+        print("\n--- Current Shopping Cart ---")
+        if not self.items:
+            print("Your cart is empty.")
+            print("-----------------------------")
+            return
+
+        for name, details in self.items.items():
+            item_total = details["price"] * details["quantity"]
+            print(f"- {name}: {details['quantity']}x @ ${details['price']:.2f} = ${item_total:.2f}")
+        
+        print(f"🛒 Total Cart Value: ${self.calculate_total():.2f}")
+        print("-----------------------------")
 
 if __name__ == "__main__":
     cart = ShoppingCart()
