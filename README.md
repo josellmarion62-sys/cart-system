@@ -1,99 +1,45 @@
-# cart-system
-##Shopping Cart
-###Description
-A simple command-line Shopping Cart application built with Python. This project allows users to add items, remove items, view their cart, and calculate the total cost through an interactive menu.
+🛒 Shopping Cart System (Python)
+📌 Overview
 
-Project Overview
-This project demonstrates the use of Python classes, dictionaries, methods, loops, conditional statements, exception handling, and user input to create a functional shopping cart system.
+The Shopping Cart System is a Python-based command-line application that allows users to manage products in a virtual shopping cart. Users can add products, remove products, display the contents of the cart, and calculate the total price of all selected items.
 
-Each item in the cart is stored with :
+This project was developed to demonstrate the basic concepts of object-oriented programming (OOP) while creating a simple and interactive shopping experience in the terminal.
 
-Item name
-Price
-Quantity
-
-Features:
-
+✨ Features
 Add items to the shopping cart
-Increase the quantity of an existing item
-Remove a specific quantity of an item
-Automatically remove an item when its quantity reaches zero
-Display all items currently in the cart
-Calculate the total cart value
-Validate item prices and quantities
-Interactive command-line menu
-Handle invalid user input
+Update the quantity of existing items
+Remove items from the cart
+Display all items in the cart
+Calculate the total price automatically
+Validate user input
+Interactive menu-driven interface
 
+🛠️ Technologies Used
+Python 
+Object-Oriented Programming (OOP)
+Dictionaries
+Exception Handling
+Command-Line Interface (CLI)
 
-=== Shopping Cart Menu ===
-1. Add Item
-2. Remove Item
-3. Show Cart
-4. Get Total Only
-5. Exit
-Add an Item
+📋 Menu Options
+Option	Description
+1	Add an item to the cart
+2	Remove an item from the cart
+3	Display the current shopping cart
+4	Display the total cost
+5	Exit the program
 
-Select option 1 and enter the item name, price, and quantity.
+⚙️ How It Works
+Run the program.
+Select an option from the menu.
+Enter the required information.
+Add or remove products from the cart.
+View the cart and calculate the total price.
+Exit the program when finished.
 
-Example:
+🎯 GROUP MEMBERS:
 
-Enter item name: Apple
-Enter item price: $2.50
-Enter quantity: 3
-
-Added 3x 'Apple' to the cart.
-Remove an Item
-
-Select option 2 to remove a specific quantity.
-
-Enter item name to remove: Apple
-Enter quantity to remove: 1
-
-Removed 1x 'Apple' from the cart.
-View the Cart
-
-Select option 3 to display the current items and total.
-
---- Current Shopping Cart ---
-- Apple: 2x @ $2.50 = $5.00
-- Bread: 1x @ $3.00 = $3.00
-🛒 Total Cart Value: $8.00
------------------------------
-Check the Total
-
-Select option 4 to get the current total without displaying all cart items.
-
-Exit
-
-Select option 5 to close the application.
-
-Key Python Concepts Demonstrated
-Object-Oriented Programming
-
-The ShoppingCart class manages the cart and its operations.
-
-class ShoppingCart:
-Dictionary Data Structure
-
-Items are stored using a dictionary:
-
-self.items = {}
-
-Each item contains its price and quantity.
-
-Methods
-
-The project uses methods for different cart operations:
-
-add_item()
-remove_item()
-calculate_total()
-show_cart()
-Input Validation
-
-The program checks that:
-
-Price is not negative
-Quantity is greater than zero
-User input contains valid numbers
-Users cannot remove items that are not in the cart
+INFANTE, JAYNARD
+NAVARRO, JOSELL MARION
+NISPEROS, JOY
+NUNAG, RUSSELL
